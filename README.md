@@ -10,3 +10,6 @@
 3.    Go to /private/var/mobile/Library/Preferences/ and open com.apple.iokit.IOMobileGraphicsFamily.plist.setrestarget.bak with a text editor. Change the canvas_height and canvas_width to the values you want (make sure they apply to your phone's aspect ratio). Save the file and close it.
 
 4.    Reboot the device and rejailbreak for your custom resolution to take effect!
+
+#### CREDITS:
+[/u/mahmoudnasha](https://www.reddit.com/user/mahmoudnashat) for SetRes, the basis for BetterRes.
