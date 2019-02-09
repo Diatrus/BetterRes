@@ -1,5 +1,5 @@
 # BetterRes for RootlessJB and root-based jailbreaks (unc0ver and Electra)
-## Only works on iPhones for now.
+### Only works on iPhones for now.
 
 
 1.    Unzip BetterRes-0.5.zip. Find the BetterRes folder and copy it to "/var/mobile/".
