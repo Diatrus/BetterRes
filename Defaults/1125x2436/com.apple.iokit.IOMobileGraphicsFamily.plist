@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>canvas_height</key>
-	<integer>1125</integer>
-	<key>canvas_width</key>
 	<integer>2436</integer>
+	<key>canvas_width</key>
+	<integer>1125</integer>
 </dict>
 </plist>
