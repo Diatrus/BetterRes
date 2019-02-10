@@ -1,14 +1,14 @@
 MODEL=$(uname -m)
 case $MODEL in
 	iPhone6,1 | iPhone6,2 | iPhone8,4) RES=640x1136;;
-	iPhone7,2 | iPhone8,1 | iPhone9,1 | iPhone9,3 | iPhone10,1 | Phone10,4) RES=750x1334;;
+	iPhone7,2 | iPhone8,1 | iPhone9,1 | iPhone9,3 | iPhone10,1 | iPhone10,4) RES=750x1334;;
 	iPhone7,1 | iPhone8,2 | iPhone9,2 | iPhone9,4 | iPhone10,2 | iPhone10,5) RES=1080x1920;;
 	iPhone10,3 | iPhone10,6) RES=1125x2436;;
 esac
 echo $MODEL detected!
 echo $RES is your default resolution.
 
-echo Crerating stock IOMobileGraphicsFamily.plist...
+echo Creating stock IOMobileGraphicsFamily.plist...
 if [ -f /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist ]; then
 	rm -f /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist
 fi
