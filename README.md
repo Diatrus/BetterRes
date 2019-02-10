@@ -2,7 +2,7 @@
 ### For RootlessJB and root-based jailbreaks (unc0ver and Electra)
 ### Only works on iPhones for now. DOES NOT WORK ON IPHONE X.
 
-1.    Unzip BetterRes-(version).zip. Find the BetterRes folder and copy it to "/var/mobile/".
+1.    Download the github repo on your phone, and unzip BetterRes-master.zip. Find the BetterRes folder and copy it to "/var/mobile/".
 
 2.   SSH into your phone as root, cd to the directory you copied BetterRes to, and run "chmod 0777 install.sh". After that, type "./install.sh" and wait for the script to finish installing.
 
