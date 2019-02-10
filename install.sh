@@ -22,7 +22,8 @@ if [ -d /private/var/containers/Bundle/iosbinpack64/ ]; then
 	cp ./com.horizon.setres.setrestarget.plist.rootless /private/var/containers/Bundle/iosbinpack64/LaunchDaemons/com.horizon.setres.setrestarget.plist
 	cp ./com.horizon.setres.setresoriginal.plist /private/var/containers/Bundle/iosbinpack64/LaunchDaemons/
 else
-	cp ./com.horizon.setres.setrestarget.plist.root /Library/LaunchDaemons/com.horizon.setres.setrestarget.plist	
+	cp ./betterres /private/etc/rc.d
+    chmod 0777 /private/etc/rc.d/betterres
 	cp ./com.horizon.setres.setresoriginal.plist /Library/LaunchDaemons/
 fi
 echo Done! Set your custom resolution in /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist.setrestarget.bak then reboot and rejailbreak!
