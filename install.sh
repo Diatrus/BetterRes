@@ -29,8 +29,10 @@ cat > /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFa
 EOF
 chmod 0755 /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist
 echo Default IOMobileGraphicsFamily.plist created! 
-echo Creating SetRes resolution files...
-cp /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist.setrestarget.bak
+echo Creating BetterRes resolution files...
+if [ ! -f /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist.setrestarget.bak ]; then
+	cp /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist.setrestarget.bak
+fi
 cp /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist /private/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist.setresoriginal.bak
 echo Copying launchdaemons...
 if [ -d /private/var/containers/Bundle/iosbinpack64/ ]; then
