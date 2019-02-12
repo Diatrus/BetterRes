@@ -5,7 +5,7 @@ case ${MODEL} in
 	iPhone7,2 | iPhone8,1 | iPhone9,1 | iPhone9,3 | iPhone10,1 | iPhone10,4)
     X=750 Y=1334;;
 	iPhone7,1 | iPhone8,2 | iPhone9,2 | iPhone9,4 | iPhone10,2 | iPhone10,5)
-    X=1080 Y=1920;;
+    X=1242 Y=2208;;
 	iPhone10,3 | iPhone10,6)
     X=1125 Y=2436;;
 esac
